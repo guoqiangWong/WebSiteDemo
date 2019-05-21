@@ -1,4 +1,6 @@
 
 server:
   servlet:
-    context-path: /
+    context-path: /reading
+  port: 9001
+
