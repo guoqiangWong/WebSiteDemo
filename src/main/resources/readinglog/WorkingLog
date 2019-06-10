@@ -1,0 +1,10 @@
+今天在运行项目时出现一个小事情，无法访问登录页面，核对url路径，百度问题解决方式，并没有发现问题所在。
+在观察文件目录时，发现文件左上角出现一个小×，idea给的提示是无法编译，故更改百度问题，找到解决方式，如下：
+
+>java文件左上角出现小叉号
+>原因：具说是标识这个类不会在工程编译的时候进行编译
+>解决：ctrl+alt+s打开Settings设置查找excludes，(或File->Settings->builde,Excution,Deployment->compiler->excludes)，
+>在右侧的Path中选中文件，删除，即可解决。
+链接地址：https://blog.csdn.net/qq_23888451/article/details/52869251[1]
+
+[1]: https://blog.csdn.net/qq_23888451/article/details/52869251
