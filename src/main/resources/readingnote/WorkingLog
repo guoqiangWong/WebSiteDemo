@@ -5,6 +5,11 @@
 >原因：具说是标识这个类不会在工程编译的时候进行编译
 >解决：ctrl+alt+s打开Settings设置查找excludes，(或File->Settings->builde,Excution,Deployment->compiler->excludes)，
 >在右侧的Path中选中文件，删除，即可解决。
-链接地址：https://blog.csdn.net/qq_23888451/article/details/52869251[1]
+>
+>链接地址：https://blog.csdn.net/qq_23888451/article/details/52869251[1]
 
 [1]: https://blog.csdn.net/qq_23888451/article/details/52869251
+
+
+工作笔记（二）
+2019年6月13日11:00:26
