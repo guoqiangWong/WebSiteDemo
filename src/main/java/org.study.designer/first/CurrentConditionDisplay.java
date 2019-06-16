@@ -1,6 +1,5 @@
 package org.study.designer.first;
 
-import javafx.beans.value.ObservableValue;
 import org.study.designer.DisplayElement;
 
 import java.util.Observable;
@@ -9,11 +8,13 @@ import java.util.Observer;
 /**
  * @author ExpanseWong
  */
-public class CurrentConditionDisplay implements Observer,DisplayElement {
+@SuppressWarnings("unused")
+public class CurrentConditionDisplay implements Observer, DisplayElement {
 
-    Observable observable;
+    private Observable observable;
     private float temperature;
     private float humidity;
+
     /**
      * This method is called whenever the observed object is changed. An
      * application calls an <tt>Observable</tt> object's
@@ -25,7 +26,7 @@ public class CurrentConditionDisplay implements Observer,DisplayElement {
      */
     @Override
     public void update(Observable o, Object arg) {
-        if (o instanceof WeatherData){
+        if (o instanceof WeatherData) {
             WeatherData weatherData = (WeatherData) o;
             this.temperature = weatherData.getTemperature();
             this.humidity = weatherData.getHumidity();
@@ -33,14 +34,14 @@ public class CurrentConditionDisplay implements Observer,DisplayElement {
         }
     }
 
-    public CurrentConditionDisplay(Observable observable){
+    public CurrentConditionDisplay(Observable observable) {
         this.observable = observable;
         observable.addObserver(this);
     }
 
     @Override
     public void display() {
-        System.out.println("Second::Current conditions: "+temperature+"F degrees and " + humidity +"% humidity");
+        System.out.println("Second::Current conditions: " + temperature + "F degrees and " + humidity + "% humidity");
 
     }
 }

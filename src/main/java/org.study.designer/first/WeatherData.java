@@ -1,12 +1,11 @@
 package org.study.designer.first;
 
-import org.hibernate.type.FloatType;
-
 import java.util.Observable;
 
 /**
  * @author ExpanseWong
  */
+@SuppressWarnings("unused")
 public class WeatherData extends Observable {
 
     private float temperature;
@@ -21,7 +20,7 @@ public class WeatherData extends Observable {
         notifyObservers();
     }
 
-    public void setMeasurements(float temperature,float humidity ,float pressure){
+    public void setMeasurements(float temperature, float humidity, float pressure) {
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;

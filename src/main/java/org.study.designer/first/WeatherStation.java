@@ -1,5 +1,9 @@
 package org.study.designer.first;
 
+/**
+ * @author ExpanseWong
+ */
+@SuppressWarnings("unused")
 public class WeatherStation {
     public static  void main(String[] args){
         WeatherData weatherData = new WeatherData();
